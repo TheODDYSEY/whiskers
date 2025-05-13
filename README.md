@@ -1,25 +1,27 @@
-# Pawstronaut
+# Whiskers
 
-Pawstronaut is a free theme for the Astro framework, designed specifically for animal shelters. It provides a beautiful and functional starting point for your next animal shelter website. Whether you're running a cat shelter, dog shelter, or any other type of animal rescue organization, Pawstronaut has you covered with its clean design and easy-to-use components.
+Welcome to Whiskers, a project dedicated to providing a comprehensive platform for cat shelters in Kenya. Our mission is to connect cats with loving homes and support the vibrant cat community in Nairobi and beyond.
+![Landing](public/landing.png)
 
-## 🌟 About Pawstronaut
+## 🌟 About Whiskers
 
-Pawstronaut is perfect for animal shelter owners, developers, and designers who want to quickly set up a stylish and responsive website. It leverages modern web technologies to ensure a smooth and performant user experience.
+Whiskers is designed for animal shelter owners, developers, and designers who want to quickly set up a stylish and responsive website. Leveraging modern web technologies, Whiskers ensures a smooth and performant user experience.
+![Adoption](public/adoption.png)
 
 ## 🛠️ Technologies Used
 
--   **Astro**: The core framework for building fast, content-focused websites.
--   **TailwindCSS**: A utility-first CSS framework for rapid UI development.
--   **Alpine.js**: A lightweight JavaScript framework for adding interactivity.
+-   **Astro JS**
+-   **TailwindCSS**
+-   **Alpine.js**
 
 ## 🚀 Installation and Deployment
 
-To get started with Pawstronaut, follow these steps:
+To get started with Whiskers, follow these steps:
 
-1. **Clone Pawstronaut**:
+1. **Clone Whiskers**:
 
     ```sh
-    git clone https://github.com/your-repo/Pawstronaut.git
+    git clone https://github.com/TheODDYSEY/whiskers.git
     ```
 
 2. **Install Dependencies**:
@@ -39,68 +41,16 @@ To get started with Pawstronaut, follow these steps:
     ```sh
     npm run build
     ```
+## 📝 Blog
 
-## 📂 Project Structure
+Stay updated with our latest posts and news. Discover stories and updates from our community.
+![Blog](public/blog.png)
 
-Inside of your Pawstronaut project, you'll see the following folders and files:
+## SEO Considerations
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   ├── pages/
-│   │   ├── index.astro
-│   │   ├── about-us.astro
-│   │   ├── blog/
-│   │   ├── cats/
-│   │   ├── contact.astro
-│   │   └── privacy-policy.mdx
-│   └── styles/
-└── package.json
-```
+Whiskers is optimized for search engines with meta tags, structured data, and fast loading times. Ensure your content is relevant and uses keywords effectively to improve visibility.
 
-## 📄 Premade Pages
+## 👀 Need Help?
 
--   Home
--   About Us
--   Blog
--   Cats
--   Contact
--   Privacy Policy
-
-## 🧩 Available Components
-
--   Article
--   Badge
--   Button
--   Card
--   CardBlogPost
--   CardCat
--   CardMember
--   CallToAction
--   Container
--   Faq
--   Footer
--   FormAdoption
--   FormContactastro
--   Header
--   Heading
--   Hero
--   LogoContainer
--   Map
--   Members
--   Section
--   ShowBlogs
--   ShowCats
--   SocialMediaIcons
--   TableHours
--   WideImage
-
-## 👀 Stuck?
-
-If you have any questions or need help with Pawstronaut, feel free to reach out to me at info@wpinfusion.com, or open an issue on the [Pawstronaut GitHub repository](https://github.com/wpinfusion/pawstronaut)
+If you have any questions or need assistance with Whiskers, feel free to reach out to us at info@whiskers.com, or open an issue on the [Whiskers GitHub repository](https://github.com/your-repo/Whiskers).
+![Contact](public/contact.png)
