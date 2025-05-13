@@ -1,0 +1,169 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import { Image, Picture } from "astro:assets";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import Faq from "~/components/Faq.astro";
+import CallToAction from "~/components/CallToAction.astro";
+import ShowCats from "~/components/ShowCats.astro";
+import ShowBlogs from "~/components/ShowBlogs.astro";
+import Heading from "~/components/Heading.astro";
+import CatNameGenerator from "~/components/CatNameGenerator.astro";
+
+// Images
+import CatBackground from "~/assets/images/pexels-thirdman-8942612.webp";
+import CatOne from "~/assets/images/pexels-chevonrossouw-2558605.jpg";
+import CatTwo from "~/assets/images/pexels-minan1398-1003994.jpg";
+
+// Faq
+const faq = [
+	{
+		question: "How does your adoption process work in Kenya?",
+		answer: "Our adoption process is simple and hassle-free. Begin by viewing our cats online, then visit our shelter in Nairobi to meet your future companion. After finding your perfect match, we'll help you complete the adoption forms. Once approved, you can pay the adoption fee via M-PESA or bank transfer, and soon after, your new family member will be ready to go home with you! Karibu!",
+	},
+	{
+		question: "What's included in the adoption fee?",
+		answer: "Your adoption fee is a contribution towards your new friend's health and care. It covers vital services including spaying/neutering at our partner vets in Nairobi, vaccinations, microchipping, health screening, and initial veterinary check-up at local KSPCA-approved clinics. This fee helps us continue our mission of rescuing more cats from Kenyan streets and providing them with loving homes.",
+	},
+	{
+		question: "Can I adopt if I live outside Nairobi?",
+		answer: "Absolutely! We welcome adopters from all counties in Kenya. While we're based in Nairobi, we can arrange meet-and-greets at our shelter or through our partner shelters in major towns. We require an in-person visit to ensure a perfect match between you and your future pet. For long-distance adoptions, we can help coordinate safe transport through our trusted pet transport partners.",
+	},
+	{
+		question: "What support do you offer after adoption?",
+		answer: "We're committed to supporting you and your new pet throughout your journey together. We provide post-adoption support including behavior advice, medical history consultation, and adjustment tips. We also connect you with our network of veterinarians across Kenya. If circumstances change and you can't keep your cat, our 'Bring Back Policy' ensures they'll always have a safe haven with us.",
+	},
+];
+---
+
+<Layout title="Find Your Perfect Feline Friend in Kenya" pageTitle="Home" description="Discover your new furry family member at our Nairobi cat shelter. We connect Kenyan homes with wonderful cats seeking their forever families.">
+	<Section class:list={"relative"}>
+		<Picture
+			src={CatBackground}
+			alt="A beautiful cat looking for their forever home in Kenya"
+			class:list={"absolute inset-0 w-full h-full object-cover"}
+			loading={"eager"}
+			fetchpriority={"high"}
+		/>
+		<div class="bg-gradient-to-r from-fuchsia-500/60 to-teal-500/80 absolute inset-0"></div>
+		<Container class:list={"relative z-10 h-full lg:min-h-svh lg:h-svh"}>
+			<div class="flex items-center h-full">
+				<div class="ml-auto">
+					<div class="prose prose-xl prose-invert text-white lg:text-right text-balance">
+						<h1 class="text-5xl lg:text-8xl mb-0">Karibu! Find Your Purr-fect Match!</h1>
+						<p>
+							Every cat in our Nairobi shelter has a unique story and personality waiting to brighten your home.
+							From playful kittens to wise senior cats, we'll help you find your ideal companion.
+							Join our growing family of happy pet owners across Kenya!
+						</p>
+
+						<div class="not-prose mt-8">
+							<Button url="/cats" color="white"> Meet Our Cats </Button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</Section>
+
+	<Section class:list={"bg-white"}>
+		<Container>
+			<Hero>
+				<div slot="hero-content-left" class="prose">
+					<h2 class="h2 text-teal-500">Why Adopt From Us?</h2>
+					<p class="leading-loose">
+						When you adopt from us, you're not just getting a pet – you're becoming part of our extended Kenyan family and
+						supporting our mission to provide loving homes for street cats across Nairobi and beyond. Each of our cats receives
+						comprehensive care at KSPCA-approved facilities, including medical attention from local veterinary partners, proper socialization,
+						and plenty of love from our dedicated team of Kenyan animal welfare professionals.
+					</p>
+
+					<div class="not-prose mt-16">
+						<Button url="/cats">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="inline-block size-5 -mt-1 mr-1"
+								viewBox="0 0 14 14"
+								><path
+									fill="currentColor"
+									fill-rule="evenodd"
+									d="M1.777.053A.5.5 0 0 1 2.3.1l3.917 2.947a6.6 6.6 0 0 1 1.564 0L11.7.1a.5.5 0 0 1 .801.4v8.25h.748a.75.75 0 0 1 0 1.5h-.81a4.5 4.5 0 0 1-.479 1.391l1.376.688a.75.75 0 1 1-.67 1.342l-1.654-.827A4.48 4.48 0 0 1 8 14H6a4.48 4.48 0 0 1-3.011-1.156l-1.654.827a.75.75 0 1 1-.67-1.342l1.376-.688a4.5 4.5 0 0 1-.479-1.391h-.81a.75.75 0 0 1 0-1.5H1.5V.5a.5.5 0 0 1 .277-.447M9.124 7.75a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m-4.25 0a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m.897 1.605A.5.5 0 0 1 6.25 9h1.5a.5.5 0 0 1 .277.916l-.75.5a.5.5 0 0 1-.554 0l-.75-.5a.5.5 0 0 1-.202-.56Z"
+									clip-rule="evenodd"></path></svg
+							>
+							Start Your Journey
+						</Button>
+					</div>
+				</div>
+				<div slot="hero-content-right" class="-rotate-1">
+					<Image src={CatOne} alt="Happy adopted cat in their new home" class:list={"w-full h-full object-cover rounded-2xl shadow"} />
+				</div>
+			</Hero>
+		</Container>
+	</Section>
+
+	<Section>
+		<Container>
+			<Heading>
+				<h2 slot="heading-title" class="h2 text-teal-500">Featured Felines</h2>
+				<p slot="heading-content">
+					Meet some of our wonderful cats waiting for their forever homes. Each has their own unique
+					personality and story. Could one of them be your perfect match?
+				</p>
+			</Heading>
+
+			<ShowCats cats={["simba-hodari", "malaika", "zawadi"]} />
+		</Container>
+	</Section>
+
+	<Section class:list={"bg-white"}>
+		<Container>
+			<Hero invert>
+				<div slot="hero-content-left" class="prose">
+					<h2 class="h2 text-fuchsia-500">Common Questions</h2>
+					<Faq items={faq} color="fuchsia" />
+				</div>
+				<div slot="hero-content-right" class="rotate-1">
+					<Image src={CatTwo} alt="Curious cat looking for a home" class:list={"w-full h-full object-cover rounded-2xl shadow"} />
+				</div>
+			</Hero>
+		</Container>
+	</Section>
+
+	<Section class:list={"relative"}>
+		<Image src={CatBackground} alt="Loving cat ready for adoption in Nairobi" class:list={"absolute inset-0 w-full h-full object-cover"} />
+		<div class="bg-gradient-to-r from-fuchsia-900/80 to-teal-900/80 absolute inset-0"></div>
+
+		<Container class:list={"relative z-10"}>
+			<CallToAction
+				title="Karibu! Ready to Meet Your New Best Friend?"
+				link={{ title: "Start Your Adoption Journey", url: "/cats", color: "white" }}
+			/>
+		</Container>
+	</Section>
+
+	<Section>
+		<Container>
+			<Heading>
+				<h2 slot="heading-title" class="h2 text-teal-500">Latest Shelter Updates</h2>
+				<p slot="heading-content">
+					Stay connected with our vibrant Kenyan shelter community! Read heartwarming adoption stories from families across Nairobi,
+					get helpful pet care tips tailored for the local climate, and learn about our latest initiatives to help more street cats
+					find loving homes in Kenya.
+				</p>
+			</Heading>
+
+			<ShowBlogs posts={["hello-world", "new-arrival-luna", "new-site-launched"]} />
+		</Container>
+	</Section>
+
+	<Section class:list={"relative"}>
+		<Image src={CatBackground} alt="Playful cat at our shelter" class:list={"absolute inset-0 w-full h-full object-cover"} />
+		<div class="bg-gradient-to-r from-fuchsia-900/80 to-teal-900/80 absolute inset-0"></div>
+
+		<Container class:list={"relative z-10"}>
+			<CatNameGenerator title="Need Help Naming Your New Friend?" />
+		</Container>
+	</Section>
+</Layout>

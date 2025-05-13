@@ -1,0 +1,44 @@
+[
+	{
+		"id": "moses-sabila",
+		"name": "Moses Sabila",
+		"role": "Founder",
+		"description": "I ensure the health and well-being of all the cats in our shelter.",
+		"image": "/src/assets/images/members/john-doe.jpg"
+	},
+	{
+		"id": "amina-mwangi",
+		"name": "Amina Mwangi",
+		"role": "Veterinary Technician",
+		"description": "I assist the doctor in treating and caring for the cats.",
+		"image": "/src/assets/images/members/jane-smith.jpg"
+	},
+	{
+		"id": "kamau-njoroge",
+		"name": "Kamau Njoroge",
+		"role": "Shelter Manager",
+		"description": "I oversee the daily operations of the shelter.",
+		"image": "/src/assets/images/members/alice-jones.jpg"
+	},
+	{
+		"id": "otieno-odhiambo",
+		"name": "Otieno Odhiambo",
+		"role": "Animal Caretaker",
+		"description": "I take care of feeding and grooming the cats.",
+		"image": "/src/assets/images/members/bob-brown.jpg"
+	},
+	{
+		"id": "wanjiku-karanja",
+		"name": " Wanjiku Karanja",
+		"role": "Adoption Coordinator",
+		"description": "I help find loving homes for our cats.",
+		"image": "/src/assets/images/members/carol-white.jpg"
+	},
+	{
+		"id": "mark-maasai",
+		"name": "Mark Maasai",
+		"role": "Volunteer Coordinator",
+		"description": "I manage and train our volunteers.",
+		"image": "/src/assets/images/members/dave-black.jpg"
+	}
+]
