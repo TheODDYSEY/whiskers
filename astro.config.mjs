@@ -11,7 +11,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://pawstronaut.netlify.app",
+	site: "https://whiskers-omega.vercel.app/",
 	base: "/",
 	integrations: [
 		tailwind(),
